@@ -10,6 +10,11 @@ let canExecuteFastAttack = !knightIsAwake;
 console.log('Fast Attack: ' + canExecuteFastAttack);
 // false
 
+// another way to do this
+if (knightIsAwake == false){canExecuteFastAttack = true}
+else{canExecuteFastAttack = false}
+console.log('Fast Attack: ' + canExecuteFastAttack);
+
 
 // task 2
 let canSpy = knightIsAwake || archerIsAwake || prisonerIsAwake;
