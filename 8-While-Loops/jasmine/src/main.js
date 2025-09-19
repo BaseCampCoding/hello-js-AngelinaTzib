@@ -1,4 +1,4 @@
-// task 1
+// task 1 //
 let juiceName = 'Energizer';
 let timeToMixJuiceResult;
 
@@ -8,26 +8,21 @@ if (juiceName == "Pure Strawberry Joy"){
 else if (juiceName == "Energizer" || juiceName == "Green Garder"){
     timeToMixJuiceResult = 1.5;
 }
-
 else if (juiceName == "Tropical Island"){
     timeToMixJuiceResult = 3;
 }
-
 else if (juiceName == "All or Nothing"){
     timeToMixJuiceResult = 5;
 }
 else{
     timeToMixJuiceResult = 2.5;
 }
-
 console.log(timeToMixJuiceResult);
 
 
-// task 2
+// task 2 //
 let wedgesNeeded = 20;
-
 limes = ["small", "large", "medium", "large", "small"]
-
 wedgesCut = 0;
 limesCut = 0;
 i = 0;
@@ -49,12 +44,14 @@ console.log("Wedges Cut: " + wedgesCut)
 console.log("Limes Cut: " + limesCut)
 
 
-// task 3
+// task 3 //
 let timeLeft = 4;
 let orders = ["Energizer", "All or Nothing", "Green Garden", "Tropical Island"];
 let totalTime = 0;
+let remainingOrders = 0
 let orderTrack = []
 let index = 0
+
 for(let i = 0; i < orders.length; i++){
     let juice = orders[i]
 
@@ -64,11 +61,9 @@ for(let i = 0; i < orders.length; i++){
     else if (juice == "Energizer" || juiceName == "Green Garder"){
         timeToMixJuiceResult = 1.5;
     }
-
     else if (juice == "Tropical Island"){
         timeToMixJuiceResult = 3;
     }
-
     else if (juice == "All or Nothing"){
         timeToMixJuiceResult = 5;
     }
@@ -78,7 +73,5 @@ for(let i = 0; i < orders.length; i++){
     orderTrack.push(juice)
     totalTime += timeToMixJuiceResult;
 }
-
 while (totalTime < timeLeft && index < orderTrack){
-    
 }
